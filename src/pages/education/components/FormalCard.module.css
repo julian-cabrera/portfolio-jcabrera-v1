@@ -7,7 +7,7 @@
   margin: 10vh 0 10vh 0;
 }
 
-.formal-card h1 {
+.formal-card h2 {
   color: var(--color-green);
   font: var(--font-montserrat-bold);
   font-size: 2rem;
@@ -15,18 +15,18 @@
   text-decoration: none;
 }
 
-.formal-card h2 {
+.formal-card h3 {
   font: var(--font-titillium-bold);
   font-size: 1.75rem;
 }
 
-.formal-card h3 {
+.formal-card h4 {
   font: var(--font-titillium-bold-italic);
   font-size: 1.75rem;
   opacity: 0.75;
 }
 
-.formal-card h4 {
+.formal-card h5 {
   color: var(--color-gray);
   font: var(--font-titillium-bold-italic);
   font-size: 1.5rem;

@@ -10,10 +10,10 @@ type Props = {
 const FormalCard: React.FC<Props> = (props) => {
   return (
     <article className={classes["formal-card"]}>
-      <h1>{props.title}</h1>
-      <h2>{props.institution}</h2>
-      <h3>{props.location}</h3>
-      <h4>{props.time}</h4>
+      <h2>{props.title}</h2>
+      <h3>{props.institution}</h3>
+      <h4>{props.location}</h4>
+      <h5>{props.time}</h5>
     </article>
   );
 };
