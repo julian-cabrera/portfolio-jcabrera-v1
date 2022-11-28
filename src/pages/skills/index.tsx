@@ -2,7 +2,7 @@ import classes from "./index.module.css";
 import Navbar from "../../layout/Navbar/Navbar";
 import Image from "next/image";
 import wordcloud from "../../../public/images/wordcloud.png";
-import SKILL_SET, { RATING } from "./Skills";
+import SKILL_SET, { RATING } from "./util/Skills";
 import SkillCard from "./components/SkillCard";
 import RatingCard from "./components/RatingCard";
 import Head from "next/head";
