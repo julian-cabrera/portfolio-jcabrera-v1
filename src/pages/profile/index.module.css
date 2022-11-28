@@ -1,0 +1,92 @@
+.profile {
+  margin: 10vh 1vw 0 1vw;
+  text-align: center;
+}
+
+.profile h1 {
+  color: var(--color-green);
+  font: var(--font-montserrat-black);
+}
+
+.profile section {
+  align-items: center;
+  padding: 5vh 0 5vh 0;
+}
+
+.intro-section {
+  border-top: 2px solid var(--color-green);
+  border-bottom: 2px solid var(--color-green);
+  display: flex;
+}
+
+.profile p {
+  font: var(--font-montserrat-regular);
+  font-size: 2rem;
+  line-height: 200%;
+}
+
+.profile .intro {
+  font: var(--font-titillium-bold-italic);
+  font-size: 2.25rem;
+  flex: 1;
+}
+
+.p-heading {
+  margin: 0 5vw 0 5vw;
+  background-color: var(--color-gray-dark);
+  color: var(--color-green);
+  font: var(--font-titillium-bold-italic) !important;
+  font-size: 2.25rem !important;
+  clip-path: polygon(
+    2rem 0,
+    calc(100% + 2rem) 0,
+    calc(100% - 2rem) 100%,
+    -2rem 100%
+  );
+}
+
+.wrapper {
+  margin: auto;
+  min-width: 10rem;
+  max-width: 20rem;
+  min-height: 10rem;
+  max-height: 20rem;
+  border-radius: 50%;
+  filter: grayscale();
+  transition: all 0.5s;
+}
+
+.wrapper img {
+  border-radius: 50%;
+}
+
+@media only screen and (width >= 900px) {
+  .wrapper:hover {
+    padding: 0.5rem;
+    background-color: var(--color-green);
+    filter: none;
+    background-color: transparent;
+    border: 5px solid var(--color-green);
+  }
+}
+@media only screen and (width <= 900px) {
+  .profile section {
+    display: inline;
+    text-align: start;
+  }
+
+  .p-heading {
+    clip-path: none;
+  }
+
+  .profile .intro,
+  .p-heading {
+    text-align: center;
+  }
+
+  .profile .intro,
+  .profile p,
+  .p-heading {
+    font-size: 1.25rem !important;
+  }
+}

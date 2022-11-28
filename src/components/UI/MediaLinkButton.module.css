@@ -1,0 +1,37 @@
+.btn-media {
+  background-color: var(--color-gray-dark);
+  border: 0 none;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  display: block;
+  margin: 1rem;
+}
+
+.btn-media:hover {
+  background-color: var(--color-gray-darker);
+  box-shadow: 3px 3px 15px 0px var(--color-green);
+  animation: light-up 1s ease;
+}
+
+.btn-media:active svg {
+  fill: var(--color-gray-light);
+}
+
+.btn-media:active {
+  content: "";
+  background-color: var(--color-gray-dark);
+  box-shadow: 3px 3px 15px 0px var(--color-gray-light);
+  opacity: 100%;
+  transition: all 0.1s;
+}
+
+@keyframes light-up {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}

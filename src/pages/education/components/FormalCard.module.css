@@ -1,0 +1,40 @@
+.formal-card * {
+  margin: 0;
+  padding: 0;
+}
+
+.formal-card {
+  margin: 10vh 0 10vh 0;
+}
+
+.formal-card h1 {
+  color: var(--color-green);
+  font: var(--font-montserrat-bold);
+  font-size: 2rem;
+  margin-bottom: 1vw;
+  text-decoration: none;
+}
+
+.formal-card h2 {
+  font: var(--font-titillium-bold);
+  font-size: 1.75rem;
+}
+
+.formal-card h3 {
+  font: var(--font-titillium-bold-italic);
+  font-size: 1.75rem;
+  opacity: 0.75;
+}
+
+.formal-card h4 {
+  color: var(--color-gray);
+  font: var(--font-titillium-bold-italic);
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+@media only screen and (width <= 900px) {
+  .formal-card * {
+    font-size: 1.25rem !important;
+  }
+}

@@ -1,0 +1,60 @@
+.course-list h1 {
+  text-align: center;
+  font: var(--font-montserrat-black);
+  font-size: 3rem;
+  text-decoration: underline solid var(--color-green);
+}
+
+.search-bar {
+  background-color: var(--color-gray-dark);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 0.5rem 1rem;
+  max-height: 5vh;
+}
+
+.search-bar input {
+  color: var(--color-gray-light);
+  background-color: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding-left: 2rem;
+  font-size: 1.25rem;
+}
+
+.search-bar svg {
+  fill: var(--color-gray-light);
+}
+
+.filter select {
+  margin: 1rem;
+  padding: 0 2rem 0 2rem;
+  float: right;
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--color-gray-dark);
+  color: var(--color-gray-light);
+  font: var(--font-titillium-regular);
+  font-size: 1rem;
+}
+
+.not-found {
+  font: var(--font-montserrat-black);
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media only screen and (width <= 900px) {
+  .course-list h1 {
+    font-size: 2rem;
+  }
+  .filter {
+    display: flex;
+    justify-content: center;
+  }
+  .not-found {
+    font-size: 2rem;
+  }
+}

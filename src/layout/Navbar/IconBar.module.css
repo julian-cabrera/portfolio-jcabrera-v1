@@ -1,0 +1,56 @@
+.iconbar {
+  margin-right: 1vw;
+}
+
+.iconbar ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.iconbar li {
+  padding: 0 0.5vw 0 0.5vw;
+}
+
+.iconbar button {
+  background-color: var(--color-gray-dark);
+  padding: 10px;
+  fill: var(--color-green);
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconbar svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-gray-light);
+  transition: transform 0.3s;
+}
+
+.iconbar button svg {
+  fill: var(--color-green);
+}
+
+.iconbar svg:hover {
+  transform: scale(1.5);
+}
+
+@media (width <= 900px) {
+  .iconbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .iconbar li:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .iconbar li:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .iconbar li:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}

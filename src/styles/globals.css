@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Titillium+Web:ital,wght@0,400;0,700;1,700&display=swap");
+
+:root {
+  --color-gray-darker: #252525;
+  --color-gray-dark: #2d2e32;
+  --color-gray: #76777e;
+  --color-gray-light: #d3d3d3;
+  --color-green: #97b61f;
+
+  --font-montserrat-black: normal 900 3rem "Montserrat", sans-serif;
+  --font-montserrat-bold: normal 700 2rem "Montserrat", sans-serif;
+  --font-montserrat-semibold: normal 600 2rem "Montserrat", sans-serif;
+  --font-montserrat-regular: normal 400 2rem "Montserrat", sans-serif;
+  --font-titillium-bold: normal 700 2rem "Titillium Web", sans-serif;
+  --font-titillium-bold-italic: italic 700 2rem "Titillium Web", sans-serif;
+  --font-titillium-regular: normal 400 2rem "Titillium Web", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--color-gray-light);
+  background: var(--color-gray-darker);
+}
+
+main {
+  margin: 1rem;
+  animation: show-in 1s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes show-in {
+  from {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  to {
+    opacity: 1;
+  }
+}

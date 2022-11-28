@@ -1,0 +1,120 @@
+.navbar {
+  background-color: transparent;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.navbar section {
+  min-width: 10vw;
+  text-align: center;
+}
+
+.navbar section .home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.navbar .home:hover {
+  transition: all 0.75s ease;
+  color: var(--color-green);
+  transform: scale(1.1);
+}
+
+.navbar span,
+.navbar button,
+.navbar h3 {
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar .name {
+  grid-area: 1 / 1 / 2 / 2;
+  font: var(--font-montserrat-bold);
+  font-size: 2.5rem;
+}
+
+.navbar .surname {
+  grid-area: 1 / 2 / 2 / 3;
+  font: var(--font-montserrat-regular);
+  font-size: 2.5rem;
+}
+
+.navbar .links {
+  color: var(--color-gray-light);
+  width: 70%;
+  font: var(--font-montserrat-semibold);
+  font-size: 1rem;
+}
+
+.navbar .links h3:hover {
+  animation: show-underline 300ms ease forwards;
+}
+
+.active-link {
+  color: var(--color-green);
+}
+
+.active-link h3::before {
+  content: "< ";
+}
+
+.active-link h3::after {
+  content: " >";
+}
+
+@keyframes show-underline {
+  from {
+    text-decoration: underline 3px rgba(151, 182, 31, 0);
+  }
+  to {
+    text-decoration: underline 3px rgba(151, 182, 31, 1);
+  }
+}
+
+@media (width <= 900px) {
+  .navbar * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .navbar section {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .navbar .home span {
+    font-size: 2rem;
+  }
+
+  .links {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .links ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .iconbar {
+    grid-area: 1 / 3 / 3 / 4;
+    position: absolute;
+    right: 0;
+  }
+}

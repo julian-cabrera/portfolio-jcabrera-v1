@@ -1,0 +1,39 @@
+.skills {
+  margin: 10vh 0 0 0;
+}
+
+.skills section {
+  margin: 10vh 0 0 0;
+}
+
+.skills section .heading {
+  text-align: center;
+  font: var(--font-montserrat-black);
+  color: var(--color-green);
+
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) auto minmax(2rem, 1fr);
+  align-items: center;
+  text-align: center;
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+.skills section .heading::before,
+.skills section .heading::after {
+  content: "";
+  border-top: 2px solid;
+}
+
+.wordcloud {
+  padding: 0 20vw 0 20vw;
+}
+
+@media only screen and (width <= 900px) {
+  .skills section .heading {
+    font-size: 2rem;
+  }
+  .wordcloud {
+    padding: 1rem;
+  }
+}

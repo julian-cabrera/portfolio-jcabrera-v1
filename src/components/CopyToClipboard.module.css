@@ -1,0 +1,26 @@
+.popup {
+  position: absolute;
+  width: 20vw;
+  border-radius: 10px;
+  background-color: var(--color-green);
+  animation: dissapear 2s forwards;
+  color: var(--color-gray-darker);
+  font: var(--font-titillium-bold);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.text:hover::after {
+  content: url("../../public/icons/Copy.svg");
+}
+
+@keyframes dissapear {
+  from {
+    opacity: 0.75;
+    margin-top: 0;
+  }
+  to {
+    opacity: 0;
+    margin-top: -150px;
+  }
+}
