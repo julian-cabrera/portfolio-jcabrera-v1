@@ -35,7 +35,7 @@
 }
 
 .card ul {
-  list-style-image: url("../../../../public/icons/RightArrow.svg");
+  list-style-image: url("../../../public/icons/RightArrow.svg");
 }
 
 .card li {

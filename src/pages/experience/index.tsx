@@ -1,8 +1,8 @@
 import classes from "./index.module.css";
 import Navbar from "../../layout/Navbar/Navbar";
-import JobCard from "./components/JobCard";
 import getJobLongevity from "../../utilities/JobLongevityCalculator";
 import Head from "next/head";
+import JobCard from "../../components/Experience/JobCard";
 
 const Experience = () => {
   return (

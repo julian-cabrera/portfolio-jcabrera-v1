@@ -1,4 +1,4 @@
-import Circle from "../../../../public/icons/Circle";
+import Circle from "../../../public/icons/Circle";
 import classes from "./SkillLabel.module.css";
 
 type Props = {

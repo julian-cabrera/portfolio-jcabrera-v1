@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Courses } from "../util/Courses";
+import { Courses } from "../../../utilities/Courses";
 import CourseCard from "./CourseCard";
 import classes from "./CourseList.module.css";
 

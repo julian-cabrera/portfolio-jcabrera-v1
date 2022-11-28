@@ -2,10 +2,10 @@ import classes from "./index.module.css";
 import Navbar from "../../layout/Navbar/Navbar";
 import Image from "next/image";
 import wordcloud from "../../../public/images/wordcloud.png";
-import SKILL_SET, { RATING } from "./util/Skills";
-import SkillCard from "./components/SkillCard";
-import RatingCard from "./components/RatingCard";
+import SKILL_SET, { RATING } from "../../utilities/Skills";
 import Head from "next/head";
+import RatingCard from "../../components/Skills/RatingCard";
+import SkillCard from "../../components/Skills/SkillCard";
 
 const Skills = () => {
   return (
