@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           </p>
           <OutlineLinkButton path="/contact">Contact me!</OutlineLinkButton>
           <a
-            href="https://drive.google.com/uc?export=download&id=1IWq8W_hwrtFXqKjaZdOeLow_3buJngoi"
+            href="https://drive.google.com/uc?export=download&id=1KdT3fo5Oo33xopf8dIsMgWtNqzPMfari"
             download>
             Download CV
             <svg
