@@ -25,11 +25,11 @@ const Home: NextPage = () => {
             <br />
             My name is
             <span> Julián</span>,
-            <br />I am a<span> Software Developer</span> !
+            <br />I am a<span> Software Engineer</span> !
           </p>
           <OutlineLinkButton path="/contact">Contact me!</OutlineLinkButton>
           <a
-            href="https://drive.google.com/uc?export=download&id=1KdT3fo5Oo33xopf8dIsMgWtNqzPMfari"
+            href="https://drive.google.com/uc?export=download&id=1MuoPOR-_LSHOuVsxtElLOBAwzsSB2TNL"
             download>
             Download CV
             <svg

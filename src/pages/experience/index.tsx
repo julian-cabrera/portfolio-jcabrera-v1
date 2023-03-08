@@ -39,7 +39,7 @@ const Experience = () => {
           position="Software Engineer"
           date="May 2022 | Present"
           time={`[ ${getJobLongevity(new Date(2022, 3, 16), new Date())} ]`}
-          descriptions={[".NET Microservices Developer.", "GL Green proyect."]}
+          descriptions={["Backend Developer.", "GL Green Initiative (POC).", ".NET Legacy Project"]}
         />
       </main>
     </>

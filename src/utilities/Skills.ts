@@ -28,9 +28,9 @@ const SKILL_SET = {
       labels: [
         { name: "C#", rating: RATING.ADVANCED.color },
         { name: "ASP.NET", rating: RATING.ADVANCED.color },
-        { name: "EntityFramework", rating: RATING.ADVANCED.color },
+        { name: "Entity Framework", rating: RATING.ADVANCED.color },
         { name: "LinQ", rating: RATING.ADVANCED.color },
-        { name: "IdentityServer", rating: RATING.BEGINNER.color },
+        { name: "Identity Server", rating: RATING.BEGINNER.color },
         { name: "xUnit", rating: RATING.INTERMEDIATE.color },
       ],
     },
@@ -73,14 +73,18 @@ const SKILL_SET = {
       name: "Microservices",
       labels: [
         { name: "Logging", rating: RATING.INTERMEDIATE.color },
-        { name: "ElasticSearch", rating: RATING.INTERMEDIATE.color },
+        { name: "Elastic Search", rating: RATING.INTERMEDIATE.color },
         { name: "Kibana", rating: RATING.INTERMEDIATE.color },
         { name: "RabbitMQ", rating: RATING.BEGINNER.color },
-        { name: "MassTransit", rating: RATING.BEGINNER.color },
+        { name: "Mass Transit", rating: RATING.BEGINNER.color },
         { name: "Docker", rating: RATING.BEGINNER.color },
         { name: "Kubernetes", rating: RATING.BEGINNER.color },
       ],
     },
+    {
+      name: "Design Patterns",
+      labels: [{ name: "Design Patterns", rating: RATING.INTERMEDIATE.color }],
+    }, 
   ],
   FRONTEND: [
     {
@@ -120,6 +124,12 @@ const SKILL_SET = {
         { name: "Flutter", rating: RATING.BASIC.color },
       ],
     },
+    {
+      name: "Selenium",
+      labels: [
+        { name: "Selenium", rating: RATING.BEGINNER.color },
+      ],
+    },
   ],
   GENERAL: [
     {
@@ -144,18 +154,14 @@ const SKILL_SET = {
         { name: "Kanban", rating: RATING.INTERMEDIATE.color },
       ],
     },
-    {
-      name: "Design Patterns",
-      labels: [{ name: "DesignPatterns", rating: RATING.INTERMEDIATE.color }],
-    },
   ],
   OTHER: [
     {
       name: "Adobe",
       labels: [
+        { name: "Figma", rating: RATING.ADVANCED.color },
         { name: "Photoshop", rating: RATING.INTERMEDIATE.color },
         { name: "Illustrator", rating: RATING.INTERMEDIATE.color },
-        { name: "Figma", rating: RATING.INTERMEDIATE.color },
       ],
     },
   ],

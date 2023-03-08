@@ -20,7 +20,7 @@ const Profile = () => {
           <p className={classes.intro}>
             {`Hello there!`}
             <br />
-            {`I'm a Software Developer located in Argentina.`}
+            {`I'm a Software Engineer located in Argentina.`}
             <br />
             {`I focus mainly on Microservices Backend development.`}
           </p>
@@ -32,7 +32,7 @@ const Profile = () => {
           <p>
             {`I started studying computer programming in early 2020 and fell in love with it.`}
             <br />
-            {`It felt very natural to me as I already had many qualities for it.`}
+            {`It felt very natural to me as I already had many qualities for that skill.`}
           </p>
           <p
             className={
@@ -48,7 +48,7 @@ const Profile = () => {
           <p
             className={
               classes["p-heading"]
-            }>{`I love travelling and the outdoors. I'm also a big fan of martial arts, music and movies!`}</p>
+            }>{`I love travelling and outdoor activities. I'm also a big fan of martial arts, music and movies!`}</p>
           <p>
             {`Although I haven't travelled much, I enjoy taking trips and exploring the world, visiting new places and being in touch with nature.`}
             <br />
