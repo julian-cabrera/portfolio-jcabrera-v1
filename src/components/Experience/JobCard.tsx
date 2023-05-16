@@ -1,14 +1,19 @@
 import classes from "./JobCard.module.css";
 
+type Description = {
+  project: string,
+  description: string
+}
+
 type Props = {
   company: string;
   position: string;
   date: string;
   time: string;
-  descriptions: string[];
+  descriptions: Description[];
 };
 
-const Card: React.FC<Props> = (props) => {
+const JobCard: React.FC<Props> = (props) => {
   return (
     <article className={classes.card}>
       <h1>{props.company}</h1>
@@ -18,11 +23,14 @@ const Card: React.FC<Props> = (props) => {
         <small>{props.time}</small>
       </h3>
       <ul>
-        {props.descriptions.map((description, id) => (
-          <li key={id}>{description}</li>
+        {props.descriptions.map((e, id) => (
+          <div key={id}>
+          <li>{e.project}</li>
+          <p>{e.description}</p>
+          </div>
         ))}
       </ul>
     </article>
   );
 };
-export default Card;
+export default JobCard;

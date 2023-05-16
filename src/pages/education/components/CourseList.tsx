@@ -66,6 +66,7 @@ const CourseList: React.FC = () => {
             link={course.link}
             repository={course.repository}
             author={course.author}
+            hours={course.hours}
           />
         ))
       ) : (

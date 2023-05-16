@@ -1,6 +1,6 @@
 import classes from "./index.module.css";
 import Navbar from "../../layout/Navbar/Navbar";
-import getJobLongevity from "../../utilities/JobLongevityCalculator";
+import getDateDiff from "../../utilities/DateDiffCalculator";
 import Head from "next/head";
 import JobCard from "../../components/Experience/JobCard";
 
@@ -21,9 +21,7 @@ const Experience = () => {
           position="Developer - Internship"
           date="Aug 2021 | Nov 2021"
           time="[ 4 months ]"
-          descriptions={[
-            "Created a Webhook in Java that cosumed services from ChatAPI and DriveAPI.",
-          ]}
+          descriptions={[{project: "ChatAPI Integration", description: "Created a Webhook in Java 8 that cosumed services from ChatAPI and DriveAPI."}]}
         />
         <JobCard
           company="Integral Software SRL"
@@ -31,15 +29,18 @@ const Experience = () => {
           date="Dec 2021 | Apr 2022"
           time="[ 5 months ]"
           descriptions={[
-            "Java development and maintenance of a health management system full cycle and RestAPI integration.",
+            {project: "Java 8 Legacy Project", description: "Java 8 development and maintenance of a health management system full cycle and RestAPI integration."},
           ]}
         />
         <JobCard
           company="GlobalLogic - Latin America"
           position="Software Engineer"
           date="May 2022 | Present"
-          time={`[ ${getJobLongevity(new Date(2022, 3, 16), new Date())} ]`}
-          descriptions={["Backend Developer.", "GL Green Initiative (POC).", ".NET Legacy Project"]}
+          time={`[ ${getDateDiff(new Date(2022, 3, 16), new Date())} ]`}
+          descriptions={[
+            {project: "GL Green Initiative", description: "Participated in the design and building process of a .NET Microservices and React application."},
+            {project: ".NET Legacy Project", description: "Currently developing automated tests with Selenium on a VB Legacy project."}
+          ]}
         />
       </main>
     </>

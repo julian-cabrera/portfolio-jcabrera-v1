@@ -5,6 +5,7 @@ import classes from "./CourseCard.module.css";
 type Props = {
   name: string;
   author: string;
+  hours: number;
   link: string;
   repository: string;
 };
@@ -14,7 +15,7 @@ const CourseCard: React.FC<Props> = (props) => {
     <article className={classes["course-card"]}>
       <h2>{props.name}</h2>
       <div>
-        <h3>{props.author}</h3>
+        <h3>{props.author} <span>{`- ${props.hours} hours`}</span></h3>
         <a href={props.link} target="_blank" rel="noreferrer">
           <ExternalLink />
         </a>
