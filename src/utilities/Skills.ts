@@ -1,27 +1,19 @@
 export const RATING = {
-  BASIC: {
-    color: "#ffffff",
-    text: "Just starting out, I barely know the basics!",
-  },
   BEGINNER: {
-    color: "#1eff00",
+    color: "#65859e",
     text: "Textbook knowledge, very little to no practical experience. Guidance would be much appreciated!",
   },
   INTERMEDIATE: {
-    color: "#0070dd",
+    color: "#cc9d38",
     text: "Some experience, can do straightforward tasks although I would need a little help on complex tasks because I probably wouldn't be able to deal with complexity.",
   },
   ADVANCED: {
-    color: "#a335ee",
+    color: "#cc5c47",
     text: "More experience, can do straightforward tasks to acceptable standards, can plan, analyze and achieve partial resolution on complex tasks.",
-  },
-  OVER9000: {
-    color: "#ff8000",
-    text: "Lot of experience, I feel very confident with this!",
   },
 };
 
-const SKILL_SET = {
+export const SKILL_SET = {
   BACKEND: [
     {
       name: ".NET",
@@ -37,7 +29,7 @@ const SKILL_SET = {
     {
       name: "Java",
       labels: [
-        { name: "Java 8", rating: RATING.INTERMEDIATE.color },
+        { name: "Java 8-17", rating: RATING.INTERMEDIATE.color },
         { name: "Spring Framework", rating: RATING.INTERMEDIATE.color },
         { name: "Maven", rating: RATING.INTERMEDIATE.color },
         { name: "Hibernate", rating: RATING.INTERMEDIATE.color },
@@ -46,28 +38,25 @@ const SKILL_SET = {
       ],
     },
     {
+      name: "Go",
+      labels: [
+        { name: "Go", rating: RATING.BEGINNER.color },
+        { name: "Go Chi", rating: RATING.BEGINNER.color },
+        { name: "Go Ora", rating: RATING.INTERMEDIATE.color },
+      ],
+    },
+    {
       name: "SQL",
       labels: [
         { name: "SQL", rating: RATING.ADVANCED.color },
         { name: "SQL Server", rating: RATING.ADVANCED.color },
         { name: "PostgreSQL", rating: RATING.INTERMEDIATE.color },
+        { name: "Oracle PL/SQL", rating: RATING.INTERMEDIATE.color },
       ],
     },
     {
       name: "NoSQL",
       labels: [{ name: "MongoDB", rating: RATING.INTERMEDIATE.color }],
-    },
-    {
-      name: "Python",
-      labels: [
-        { name: "Python", rating: RATING.BEGINNER.color },
-        { name: "FastAPI", rating: RATING.BASIC.color },
-        { name: "SQL Alchemy", rating: RATING.BASIC.color },
-      ],
-    },
-    {
-      name: "GRPC",
-      labels: [{ name: "GRPC", rating: RATING.BEGINNER.color }],
     },
     {
       name: "Microservices",
@@ -79,12 +68,14 @@ const SKILL_SET = {
         { name: "Mass Transit", rating: RATING.BEGINNER.color },
         { name: "Docker", rating: RATING.BEGINNER.color },
         { name: "Kubernetes", rating: RATING.BEGINNER.color },
+        { name: "RPC", rating: RATING.BEGINNER.color },
+        { name: "gRPC", rating: RATING.BEGINNER.color },
       ],
     },
     {
       name: "Design Patterns",
       labels: [{ name: "Design Patterns", rating: RATING.INTERMEDIATE.color }],
-    }, 
+    },
   ],
   FRONTEND: [
     {
@@ -96,10 +87,6 @@ const SKILL_SET = {
         { name: "jQuery", rating: RATING.INTERMEDIATE.color },
         { name: "AJAX", rating: RATING.INTERMEDIATE.color },
       ],
-    },
-    {
-      name: "Node",
-      labels: [{ name: "NodeJS", rating: RATING.BEGINNER.color }],
     },
     {
       name: "HTML & CSS",
@@ -118,26 +105,17 @@ const SKILL_SET = {
       ],
     },
     {
-      name: "Flutter",
-      labels: [
-        { name: "Dart", rating: RATING.BASIC.color },
-        { name: "Flutter", rating: RATING.BASIC.color },
-      ],
-    },
-    {
       name: "Selenium",
-      labels: [
-        { name: "Selenium", rating: RATING.BEGINNER.color },
-      ],
+      labels: [{ name: "Selenium", rating: RATING.BEGINNER.color }],
     },
   ],
   GENERAL: [
     {
       name: "Languages",
       labels: [
-        { name: "Spanish", rating: RATING.OVER9000.color },
-        { name: "English", rating: RATING.OVER9000.color },
-        { name: "German", rating: RATING.BASIC.color },
+        { name: "Spanish", rating: RATING.ADVANCED.color },
+        { name: "English", rating: RATING.ADVANCED.color },
+        { name: "German", rating: RATING.BEGINNER.color },
       ],
     },
     {
@@ -145,6 +123,7 @@ const SKILL_SET = {
       labels: [
         { name: "GitHub", rating: RATING.ADVANCED.color },
         { name: "GitLab", rating: RATING.ADVANCED.color },
+        { name: "Bitbucket", rating: RATING.ADVANCED.color },
       ],
     },
     {
@@ -152,6 +131,13 @@ const SKILL_SET = {
       labels: [
         { name: "Scrum", rating: RATING.ADVANCED.color },
         { name: "Kanban", rating: RATING.INTERMEDIATE.color },
+      ],
+    },
+    {
+      name: "Issue Tracker",
+      labels: [
+        { name: "Jira", rating: RATING.INTERMEDIATE.color },
+        { name: "Azure DevOps", rating: RATING.INTERMEDIATE.color },
       ],
     },
   ],
@@ -166,4 +152,3 @@ const SKILL_SET = {
     },
   ],
 };
-export default SKILL_SET;

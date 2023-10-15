@@ -1,5 +1,5 @@
-import ExternalLink from "../../../../public/icons/ExternalLink";
-import Github from "../../../../public/icons/Github";
+import ExternalLink from "../../../public/icons/ExternalLink";
+import Github from "../../../public/icons/Github";
 import classes from "./CourseCard.module.css";
 
 type Props = {
