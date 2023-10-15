@@ -1,7 +1,7 @@
 import classes from "./index.module.css";
 import Navbar from "../../layout/Navbar/Navbar";
-import CourseList from "./components/CourseList";
-import FormalList from "./components/FormalList";
+import CourseList from "./../../components/Education/CourseList";
+import FormalList from "./../../components/Education/FormalList";
 import Head from "next/head";
 
 const Education = () => {

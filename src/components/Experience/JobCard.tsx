@@ -1,17 +1,22 @@
 import classes from "./JobCard.module.css";
+import JobTechStack from "./JobTechStack";
 
-type Description = {
-  project: string,
-  description: string
-}
 
 type Props = {
-  company: string;
-  position: string;
-  date: string;
-  time: string;
-  descriptions: Description[];
+  company: string,
+  position: string,
+  date: string,
+  time: string,
+  descriptions: Descriptions[];  
 };
+
+type Descriptions = {
+  description: string,
+    stack: {
+      main: string,
+      sub: string[]
+    }[]
+}
 
 const JobCard: React.FC<Props> = (props) => {
   return (
@@ -23,12 +28,11 @@ const JobCard: React.FC<Props> = (props) => {
         <small>{props.time}</small>
       </h3>
       <ul>
-        {props.descriptions.map((e, id) => (
-          <div key={id}>
-          <li>{e.project}</li>
-          <p>{e.description}</p>
-          </div>
-        ))}
+        {
+          props.descriptions.map((e, i) => 
+            <JobTechStack key={i} description={e.description} stack={e.stack}/>
+          )
+        }
       </ul>
     </article>
   );

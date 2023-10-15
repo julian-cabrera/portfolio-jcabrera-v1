@@ -5,7 +5,7 @@ import Link from "next/link";
 import Github from "../../public/icons/Github";
 import Linkedin from "../../public/icons/Linkedin";
 import Whatsapp from "../../public/icons/Whatsapp";
-import ExternalLinks from "../utilities/ExternalLinks";
+import { EXTERNAL_LINKS } from "../utilities/ExternalLinks";
 
 import MediaLinkButton from "../components/UI/MediaLinkButton";
 import OutlineLinkButton from "../components/UI/OutlineLinkButton";
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           </p>
           <OutlineLinkButton path="/contact">Contact me!</OutlineLinkButton>
           <a
-            href="https://drive.google.com/uc?export=download&id=1MuoPOR-_LSHOuVsxtElLOBAwzsSB2TNL"
+            href="https://github.com/julian-cabrera/julian-cabrera/files/12620069/230915-resume-jcabrera.pdf"
             download>
             Download CV
             <svg
@@ -60,13 +60,13 @@ const Home: NextPage = () => {
           </Link>
         </nav>
         <nav className={classes.socialmedia}>
-          <MediaLinkButton path={ExternalLinks.WHATSAPP}>
+          <MediaLinkButton path={EXTERNAL_LINKS.WHATSAPP}>
             <Whatsapp />
           </MediaLinkButton>
-          <MediaLinkButton path={ExternalLinks.LINKEDIN}>
+          <MediaLinkButton path={EXTERNAL_LINKS.LINKEDIN}>
             <Linkedin />
           </MediaLinkButton>
-          <MediaLinkButton path={ExternalLinks.GITHUB}>
+          <MediaLinkButton path={EXTERNAL_LINKS.GITHUB}>
             <Github />
           </MediaLinkButton>
         </nav>

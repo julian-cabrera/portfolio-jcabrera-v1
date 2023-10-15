@@ -25,6 +25,10 @@
   line-height: 200%;
 }
 
+.profile span {
+  color: var(--color-green);
+}
+
 .profile .intro {
   font: var(--font-titillium-bold-italic);
   font-size: 2.25rem;

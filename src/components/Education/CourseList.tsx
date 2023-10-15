@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Courses } from "../../../utilities/Courses";
+import { COURSES } from "../../utilities/Courses";
 import CourseCard from "./CourseCard";
 import classes from "./CourseList.module.css";
 
 const CourseList: React.FC = () => {
-  const [courses, setCourses] = useState(Courses);
+  const [courses, setCourses] = useState(COURSES);
   const [searchQuery, setSearchQuery] = useState("");
 
   const queryHandler = (queryString: string) => {
     setSearchQuery(queryString);
-    const filteredList = Courses.filter(
+    const filteredList = COURSES.filter(
       (course) =>
         course.name.trim().toLowerCase().match(queryString.toLowerCase()) ||
         course.author.trim().toLowerCase().match(queryString.toLowerCase())

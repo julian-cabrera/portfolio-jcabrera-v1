@@ -8,8 +8,8 @@ import Phone from "../../../public/icons/Phone";
 import CopyToClipboard from "../../components/CopyToClipboard";
 import useInput from "../../hooks/use-input";
 import Navbar from "../../layout/Navbar/Navbar";
-import ExternalLinks from "../../utilities/ExternalLinks";
 import classes from "./index.module.css";
+import { EXTERNAL_LINKS } from "../../utilities/ExternalLinks";
 
 const Contact = () => {
   const [buttonText, setButtonText] = useState("Send");
@@ -98,11 +98,12 @@ const Contact = () => {
       setButtonText("Send");
       return;
     }
-
+  
     setShowSuccessMessage(true);
     setShowFailureMessage(false);
     setButtonText("Send");
   };
+  
 
   const nameInputClasses = nameInputHasError
     ? `${classes["name-input"]} ${classes["invalid-input"]}`
@@ -141,7 +142,7 @@ const Contact = () => {
       </Head>
       <Navbar />
       <main className={classes.main}>
-        <section>
+        {/* <section>
           <h1 className={classes.title}>Contact me</h1>
           <form onSubmit={submitHandler} className={classes.form}>
             <input
@@ -199,7 +200,7 @@ const Contact = () => {
               </p>
             )}
           </div>
-        </section>
+        </section> */}
         <section className={classes.info}>
           <ul>
             <li className={classes.icon1}>
@@ -218,7 +219,7 @@ const Contact = () => {
               <Location />
             </li>
             <li className={classes.item6}>
-              <a href={ExternalLinks.WHATSAPP} target="_blank" rel="noreferrer">
+              <a href={EXTERNAL_LINKS.WHATSAPP} target="_blank" rel="noreferrer">
                 +54 343 4620007
               </a>
             </li>
@@ -226,17 +227,17 @@ const Contact = () => {
               <CopyToClipboard text="julian.e.cabrera@hotmail.com" />
             </li>
             <li className={classes.item8}>
-              <a href={ExternalLinks.LINKEDIN} target="_blank" rel="noreferrer">
+              <a href={EXTERNAL_LINKS.LINKEDIN} target="_blank" rel="noreferrer">
                 linkedin.com/in/cabrerajulian
               </a>
             </li>
             <li className={classes.item9}>
-              <a href={ExternalLinks.GITHUB} target="_blank" rel="noreferrer">
+              <a href={EXTERNAL_LINKS.GITHUB} target="_blank" rel="noreferrer">
                 github.com/julian-cabrera
               </a>
             </li>
             <li className={classes.item10}>
-              <a href={ExternalLinks.LOCATION} target="_blank" rel="noreferrer">
+              <a href={EXTERNAL_LINKS.LOCATION} target="_blank" rel="noreferrer">
                 Paraná, Entre Ríos, Argentina
               </a>
             </li>

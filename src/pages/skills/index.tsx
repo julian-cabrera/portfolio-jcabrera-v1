@@ -1,11 +1,9 @@
 import classes from "./index.module.css";
 import Navbar from "../../layout/Navbar/Navbar";
-import Image from "next/image";
-import wordcloud from "../../../public/images/wordcloud.png";
-import SKILL_SET, { RATING } from "../../utilities/Skills";
+import { SKILL_SET } from "../../utilities/Skills";
 import Head from "next/head";
-import RatingCard from "../../components/Skills/RatingCard";
 import SkillCard from "../../components/Skills/SkillCard";
+import SkillBar from "../../components/Skills/SkillBar";
 
 const Skills = () => {
   return (
@@ -19,36 +17,6 @@ const Skills = () => {
       </Head>
       <Navbar />
       <main className={classes.skills}>
-        <section className={classes.wordcloud}>
-          <Image src={wordcloud} alt="wordart" />
-        </section>
-        <section className={classes.rating}>
-          <RatingCard
-            name="BASIC"
-            color={RATING.BASIC.color}
-            text={RATING.BASIC.text}
-          />
-          <RatingCard
-            name="BEGINNER"
-            color={RATING.BEGINNER.color}
-            text={RATING.BEGINNER.text}
-          />
-          <RatingCard
-            name="INTERMEDIATE"
-            color={RATING.INTERMEDIATE.color}
-            text={RATING.INTERMEDIATE.text}
-          />
-          <RatingCard
-            name="ADVANCED"
-            color={RATING.ADVANCED.color}
-            text={RATING.ADVANCED.text}
-          />
-          <RatingCard
-            name="OVER9000"
-            color={RATING.OVER9000.color}
-            text={RATING.OVER9000.text}
-          />
-        </section>
         <section>
           <span className={classes.heading}>Backend</span>
           {SKILL_SET.BACKEND.map((skill, index) => (
@@ -73,6 +41,8 @@ const Skills = () => {
             <SkillCard key={index} name={skill.name} labels={skill.labels} />
           ))}
         </section>
+        <SkillBar />
+        <div className={classes.separator}></div>
       </main>
     </>
   );
