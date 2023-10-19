@@ -23,15 +23,15 @@ export const SKILL_SET = {
         { name: "Entity Framework", rating: RATING.ADVANCED.color },
         { name: "LinQ", rating: RATING.ADVANCED.color },
         { name: "Identity Server", rating: RATING.BEGINNER.color },
-        { name: "xUnit", rating: RATING.INTERMEDIATE.color },
+        { name: "xUnit", rating: RATING.ADVANCED.color },
       ],
     },
     {
       name: "Java",
       labels: [
-        { name: "Java 8-17", rating: RATING.INTERMEDIATE.color },
-        { name: "Spring Framework", rating: RATING.INTERMEDIATE.color },
-        { name: "Maven", rating: RATING.INTERMEDIATE.color },
+        { name: "Java 8-17", rating: RATING.ADVANCED.color },
+        { name: "Spring Framework", rating: RATING.ADVANCED.color },
+        { name: "Maven", rating: RATING.ADVANCED.color },
         { name: "Hibernate", rating: RATING.INTERMEDIATE.color },
         { name: "Wildfly", rating: RATING.INTERMEDIATE.color },
         { name: "JSP", rating: RATING.INTERMEDIATE.color },
@@ -40,8 +40,8 @@ export const SKILL_SET = {
     {
       name: "Go",
       labels: [
-        { name: "Go", rating: RATING.BEGINNER.color },
-        { name: "Go Chi", rating: RATING.BEGINNER.color },
+        { name: "Go", rating: RATING.INTERMEDIATE.color },
+        { name: "Go Chi", rating: RATING.INTERMEDIATE.color },
         { name: "Go Ora", rating: RATING.INTERMEDIATE.color },
       ],
     },
@@ -81,7 +81,7 @@ export const SKILL_SET = {
     {
       name: "JavaScript",
       labels: [
-        { name: "Vanilla", rating: RATING.ADVANCED.color },
+        { name: "JavaScript", rating: RATING.ADVANCED.color },
         { name: "TypeScript", rating: RATING.INTERMEDIATE.color },
         { name: "Jest", rating: RATING.BEGINNER.color },
         { name: "jQuery", rating: RATING.INTERMEDIATE.color },
@@ -130,7 +130,7 @@ export const SKILL_SET = {
       name: "Agile",
       labels: [
         { name: "Scrum", rating: RATING.ADVANCED.color },
-        { name: "Kanban", rating: RATING.INTERMEDIATE.color },
+        { name: "Kanban", rating: RATING.ADVANCED.color },
       ],
     },
     {

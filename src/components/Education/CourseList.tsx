@@ -23,6 +23,9 @@ const CourseList: React.FC = () => {
       case "name":
         setCourses(sortedArray.sort((a, b) => a.name.localeCompare(b.name)));
         break;
+      case "author":
+        setCourses(sortedArray.sort((a, b) => a.author.localeCompare(b.author)));
+        break;
       default:
         setCourses(
           sortedArray.sort((a, b) => a.author.localeCompare(b.author))
