@@ -11,7 +11,7 @@
 }
 
 .text:hover::after {
-  content: url("../../public/icons/Copy.svg");
+  content: url("../../../public/icons/Copy.svg");
 }
 
 @keyframes dissapear {

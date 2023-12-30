@@ -5,11 +5,11 @@ import Github from "../../../public/icons/Github";
 import Linkedin from "../../../public/icons/Linkedin";
 import Location from "../../../public/icons/Location";
 import Phone from "../../../public/icons/Phone";
-import CopyToClipboard from "../../components/CopyToClipboard";
 import useInput from "../../hooks/use-input";
 import Navbar from "../../layout/Navbar/Navbar";
 import classes from "./index.module.css";
 import { EXTERNAL_LINKS } from "../../utilities/ExternalLinks";
+import CopyToClipboard from "../../components/CopyToClipboard/CopyToClipboard";
 
 const Contact = () => {
   const [buttonText, setButtonText] = useState("Send");
@@ -142,7 +142,7 @@ const Contact = () => {
       </Head>
       <Navbar />
       <main className={classes.main}>
-        {/* <section>
+        <section>
           <h1 className={classes.title}>Contact me</h1>
           <form onSubmit={submitHandler} className={classes.form}>
             <input
@@ -200,7 +200,7 @@ const Contact = () => {
               </p>
             )}
           </div>
-        </section> */}
+        </section>
         <section className={classes.info}>
           <ul>
             <li className={classes.icon1}>
@@ -224,7 +224,7 @@ const Contact = () => {
               </a>
             </li>
             <li className={classes.item7}>
-              <CopyToClipboard text="julian.e.cabrera@hotmail.com" />
+              <CopyToClipboard text="julian.e.cabrera@hotmail.com"/>
             </li>
             <li className={classes.item8}>
               <a href={EXTERNAL_LINKS.LINKEDIN} target="_blank" rel="noreferrer">

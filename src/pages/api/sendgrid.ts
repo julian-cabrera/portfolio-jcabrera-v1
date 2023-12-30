@@ -8,7 +8,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
     await sendgrid.send({
       to: "jcabrera.inbox@gmail.com",
       from: "julian.e.cabrera@hotmail.com",
-      subject: `${req.body.subject}`,
+      subject: `Portfolio Inbox from ${req.body.subject}`,
       html: `
       <div>
         <b>Message:</b> ${req.body.message}
