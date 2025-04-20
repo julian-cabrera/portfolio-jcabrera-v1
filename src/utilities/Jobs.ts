@@ -54,13 +54,13 @@ export const JOBS = [
   // GlobalLogic
   {
     company: "GlobalLogic - Latin America",
-    position: "Software Engineer",
-    date: "May 2022 | Present",
-    time: getDateDiff(new Date(2022, 3, 16), new Date()),
+    position: "Junior Software Engineer",
+    date: "May 2022 | Feb 2024",
+    time: "[ 21 months ]",
     descriptions: [
       {
         description:
-          "Micro-service-oriented POC, social media-like application to create eco-friendly challenges.",
+          "Microservice-oriented POC, social media-like application to create eco-friendly challenges.",
         stack: [
           {
             main: ".NET",
@@ -99,7 +99,7 @@ export const JOBS = [
         ],
       },
       {
-        description: "Micro-services development with Go and Java.",
+        description: "Microservices development with Go and Java.",
         stack: [
           {
             main: "Java",
@@ -117,4 +117,30 @@ export const JOBS = [
       },
     ],
   },
+  {
+    company: "Mercado Libre",
+    position: "Software Engineer",
+    date: "Mar 2024 | Present",
+    time: getDateDiff(new Date(2024, 3, 18), new Date()),
+    descriptions: [
+      {
+        description:
+          "Microservices development.",
+        stack: [
+          {
+            main: "Java",
+            sub: ["Java 17", "Spring Boot 3"],
+          },
+          {
+            main: "MySQL + NoSQL",
+            sub: [],
+          },
+          {
+            main: "AWS",
+            sub: [],
+          }
+        ],
+      }
+    ]
+  }
 ];

@@ -3,7 +3,6 @@ import Navbar from "../../layout/Navbar/Navbar";
 import avatar from "../../../public/images/my-avatar.png";
 import Image from "next/image";
 import Head from "next/head";
-import OutlineButton from "../../components/UI/OutlineLinkButton";
 
 const Profile = () => {
   return (
@@ -58,9 +57,9 @@ const Profile = () => {
           <p>
             {`I'm excited to continue pushing the boundaries of what's possible in software engineering and look forward to new challenges and opportunities.`}
           </p>
-          <OutlineButton path="/contact">
+          <p className={classes["p-heading"]}>
             {`Feel free to reach out if you see exciting opportunities on the horizon were we can push the boundaries of software engineering!`}
-          </OutlineButton>
+          </p>
         </section>
       </main>
     </>
