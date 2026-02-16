@@ -129,11 +129,11 @@ export const JOBS = [
         stack: [
           {
             main: "Java",
-            sub: ["Java 17", "Spring Boot 3"],
+            sub: ["Java 21", "Spring Boot"],
           },
           {
-            main: "MySQL + NoSQL",
-            sub: [],
+            main: "Data",
+            sub: ["MySQL", "NoSQL"],
           },
           {
             main: "AWS",
