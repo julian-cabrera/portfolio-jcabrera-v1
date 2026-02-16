@@ -14,78 +14,71 @@ export const RATING = {
 };
 
 export const SKILL_SET = {
-  BACKEND: [
+  AI: [
     {
-      name: ".NET",
+      name: "Practices",
       labels: [
-        { name: "C#", rating: RATING.ADVANCED.color },
-        { name: "ASP.NET", rating: RATING.ADVANCED.color },
-        { name: "Entity Framework", rating: RATING.ADVANCED.color },
-        { name: "LinQ", rating: RATING.ADVANCED.color },
-        { name: "Identity Server", rating: RATING.BEGINNER.color },
-        { name: "xUnit", rating: RATING.ADVANCED.color },
+        { name: "Prompting", rating: RATING.ADVANCED.color },
+        { name: "Spec Driven Development", rating: RATING.INTERMEDIATE.color }
       ],
     },
     {
+      name: "Tools",
+      labels: [
+        { name: "MCP", rating: RATING.INTERMEDIATE.color },
+      ],
+    }
+  ],
+  BACKEND: [
+    {
       name: "Java",
       labels: [
-        { name: "Java 8-17", rating: RATING.ADVANCED.color },
+        { name: "Java 8-21", rating: RATING.ADVANCED.color },
         { name: "Spring Framework", rating: RATING.ADVANCED.color },
-        { name: "Maven", rating: RATING.ADVANCED.color },
-        { name: "Hibernate", rating: RATING.INTERMEDIATE.color },
-        { name: "Wildfly", rating: RATING.INTERMEDIATE.color },
-        { name: "JSP", rating: RATING.INTERMEDIATE.color },
+        { name: "JUnit", rating: RATING.ADVANCED.color }
+      ],
+    },
+    {
+      name: ".NET",
+      labels: [
+        { name: "C#", rating: RATING.INTERMEDIATE.color },
+        { name: "Entity Framework", rating: RATING.INTERMEDIATE.color },
+        { name: "xUnit", rating: RATING.INTERMEDIATE.color }
       ],
     },
     {
       name: "Go",
       labels: [
-        { name: "Go", rating: RATING.INTERMEDIATE.color },
-        { name: "Go Chi", rating: RATING.INTERMEDIATE.color },
-        { name: "Go Ora", rating: RATING.INTERMEDIATE.color },
+        { name: "Go", rating: RATING.BEGINNER.color },
+        { name: "Go Chi", rating: RATING.BEGINNER.color },
+        { name: "Go Ora", rating: RATING.BEGINNER.color },
       ],
     },
     {
-      name: "SQL",
+      name: "Data Storage",
       labels: [
-        { name: "SQL", rating: RATING.ADVANCED.color },
-        { name: "SQL Server", rating: RATING.ADVANCED.color },
-        { name: "PostgreSQL", rating: RATING.INTERMEDIATE.color },
-        { name: "Oracle PL/SQL", rating: RATING.INTERMEDIATE.color },
+        { name: "Relational", rating: RATING.ADVANCED.color },
+        { name: "NoSQL", rating: RATING.ADVANCED.color }
       ],
-    },
-    {
-      name: "NoSQL",
-      labels: [{ name: "MongoDB", rating: RATING.INTERMEDIATE.color }],
     },
     {
       name: "Microservices",
       labels: [
-        { name: "Logging", rating: RATING.INTERMEDIATE.color },
-        { name: "Elastic Search", rating: RATING.INTERMEDIATE.color },
-        { name: "Kibana", rating: RATING.INTERMEDIATE.color },
-        { name: "RabbitMQ", rating: RATING.BEGINNER.color },
-        { name: "Mass Transit", rating: RATING.BEGINNER.color },
-        { name: "Docker", rating: RATING.BEGINNER.color },
-        { name: "Kubernetes", rating: RATING.BEGINNER.color },
-        { name: "RPC", rating: RATING.BEGINNER.color },
-        { name: "gRPC", rating: RATING.BEGINNER.color },
+        { name: "Service Design & Architecture", rating: RATING.ADVANCED.color },
+        { name: "Observability & Telemetry", rating: RATING.ADVANCED.color },
+        { name: "Resillience & Fault Tolerance", rating: RATING.ADVANCED.color },
+        { name: "Cloud and Infrastructure", rating: RATING.INTERMEDIATE.color },
+        { name: "DevOps", rating: RATING.INTERMEDIATE.color },
+        { name: "Security in Distributed Systems", rating: RATING.ADVANCED.color },
       ],
-    },
-    {
-      name: "Design Patterns",
-      labels: [{ name: "Design Patterns", rating: RATING.INTERMEDIATE.color }],
-    },
+    }
   ],
   FRONTEND: [
     {
       name: "JavaScript",
       labels: [
-        { name: "JavaScript", rating: RATING.ADVANCED.color },
-        { name: "TypeScript", rating: RATING.INTERMEDIATE.color },
-        { name: "Jest", rating: RATING.BEGINNER.color },
-        { name: "jQuery", rating: RATING.INTERMEDIATE.color },
-        { name: "AJAX", rating: RATING.INTERMEDIATE.color },
+        { name: "JavaScript", rating: RATING.INTERMEDIATE.color },
+        { name: "TypeScript", rating: RATING.INTERMEDIATE.color }
       ],
     },
     {
@@ -136,19 +129,9 @@ export const SKILL_SET = {
     {
       name: "Issue Tracker",
       labels: [
-        { name: "Jira", rating: RATING.INTERMEDIATE.color },
+        { name: "Jira", rating: RATING.ADVANCED.color },
         { name: "Azure DevOps", rating: RATING.INTERMEDIATE.color },
       ],
     },
-  ],
-  OTHER: [
-    {
-      name: "Adobe",
-      labels: [
-        { name: "Figma", rating: RATING.ADVANCED.color },
-        { name: "Photoshop", rating: RATING.INTERMEDIATE.color },
-        { name: "Illustrator", rating: RATING.INTERMEDIATE.color },
-      ],
-    },
-  ],
+  ]
 };
