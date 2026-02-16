@@ -18,6 +18,12 @@ const Skills = () => {
       <Navbar />
       <main className={classes.skills}>
         <section>
+          <span className={classes.heading}>AI</span>
+          {SKILL_SET.AI.map((skill, index) => (
+            <SkillCard key={index} name={skill.name} labels={skill.labels} />
+          ))}
+        </section>
+        <section>
           <span className={classes.heading}>Backend</span>
           {SKILL_SET.BACKEND.map((skill, index) => (
             <SkillCard key={index} name={skill.name} labels={skill.labels} />
@@ -32,12 +38,6 @@ const Skills = () => {
         <section>
           <span className={classes.heading}>General</span>
           {SKILL_SET.GENERAL.map((skill, index) => (
-            <SkillCard key={index} name={skill.name} labels={skill.labels} />
-          ))}
-        </section>
-        <section>
-          <span className={classes.heading}>Other</span>
-          {SKILL_SET.OTHER.map((skill, index) => (
             <SkillCard key={index} name={skill.name} labels={skill.labels} />
           ))}
         </section>
